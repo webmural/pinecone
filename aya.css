@@ -1,0 +1,46 @@
+:root {
+  --samp: 0deg;
+  --woof: #330330;
+}
+
+::selection {
+  background: deeppink;
+  color: #030303;
+}
+
+:any-link {
+  color: #ee1;
+  opacity: 0.909;
+  transition: 210ms ease-in-out;
+}
+
+:any-link:nth-child(odd) {
+  color: #1ee;
+}
+
+:focus,
+:hover {
+  text-decoration-color: #1ee;
+}
+
+:focus,
+:active {
+  opacity: 1;
+}
+
+html {
+  background: indigo;
+  background-image: linear-gradient(.3turn, #1ee 0%, #1ee 10%, indigo 10%, indigo 90%, #ee1 90%);
+  color: gainsboro;
+  transition: 210ms ease-in-out;
+}
+
+samp,
+mark {
+  background: #ee1;
+  color: var(--woof);
+}
+
+samp {
+  filter: hue-rotate(var(--samp));
+}
